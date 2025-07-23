@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>jwi.ovh</title>
+  <title>services.jwi.ovh</title>
   <style>
     @font-face {
       font-family: 'Inter';
@@ -24,6 +24,7 @@
       min-height: 100vh;
       flex-direction: column;
       text-align: center;
+      padding: 20px;
     }
 
     .logo img {
@@ -38,35 +39,42 @@
 
     p {
       color: #aaa;
-      max-width: 500px;
+      max-width: 600px;
     }
 
-    .links {
-      margin-top: 20px;
+    .projects {
+      margin-top: 30px;
+      max-width: 700px;
     }
 
-    .links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin: 10px;
-      padding: 10px 18px;
-      background: #222;
+    .project {
+      margin-bottom: 25px;
+      border: 1px solid #333;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #1a1a1a;
+    }
+
+    .project h2 {
+      margin-bottom: 10px;
+      color: #0cf;
+      cursor: pointer;
+    }
+
+    .project a {
       color: #0cf;
       text-decoration: none;
-      border-radius: 8px;
-      border: 1px solid #0cf;
-      transition: all 0.2s ease;
+      font-weight: bold;
     }
 
-    .links a:hover {
-      background: #0cf;
-      color: #000;
+    .details {
+      display: none;
+      margin-top: 10px;
+      text-align: left;
     }
 
-    .links img {
-      width: 20px;
-      height: 20px;
+    .details ul {
+      padding-left: 20px;
     }
 
     .footer {
@@ -74,21 +82,69 @@
       font-size: 0.9em;
       color: #555;
     }
+
+    .footer a {
+      color: #0cf;
+      text-decoration: none;
+    }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".project h2").forEach(header => {
+        header.addEventListener("click", () => {
+          const details = header.parentElement.querySelector(".details");
+          if (details) {
+            details.style.display = details.style.display === "block" ? "none" : "block";
+          }
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
   <div class="logo">
     <img src="logo/jwi.svg" alt="Logo JWI" />
   </div>
-  <h1>services jwi.ovh</h1>
+  <h1>services.jwi.ovh</h1>
   <p>Strona główna projektów i usług</p>
-  <div class="links">
-    <a href="https://mc1.jwi.ovh" target="_blank"><img src="icons/mail.svg" alt="Ikona" />Minecraft</a>
-    <a href="https://monitoring.jwi.ovh" target="_blank"><img src="icons/mail.svg" alt="Ikona" />Monitoring</a>
-    <a href="mailto:jwiatrak@gmail.com"><img src="icons/mail.svg" alt="Ikona" />Kontakt</a>
+
+  <div class="projects">
+    <div class="project">
+      <h2>Minecraft Server</h2>
+      <p>Serwer Minecraft Java Edition, wersja 1.21.8. Stabilny, monitorowany, dostępny publicznie przez tunel ZeroTier.
+      </p>
+      <div class="details">
+        <strong>Adres:</strong> <a href="https://mc1.jwi.ovh" target="_blank">mc1.jwi.ovh</a><br>
+        <strong>Wersja:</strong> 1.21.8<br>
+        <strong>Lista modów:</strong>
+        <ul>
+          <li>(brak)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project">
+      <h2>Project Zomboid</h2>
+      <p>Serwer gry Project Zomboid (build 42), uruchomiony na VM z tunelem ZeroTier i reverse proxy przez VPS.</p>
+      <div class="details">
+        <strong>Adres:</strong> <a href="https://pz1.jwi.ovh" target="_blank">pz1.jwi.ovh</a><br>
+        <strong>Build:</strong> 42
+      </div>
+    </div>
+    <div class="project">
+      <h2>FoundryVTT</h2>
+      <p>Instancja Foundry Virtual Tabletop (FoundryVTT) – do prowadzenia sesji RPG online, wystawiona przez reverse
+        proxy i zabezpieczona Cloudflare Access.</p>
+      <div class="details">
+        <strong>Adres:</strong> <a href="https://foundry.jwi.ovh" target="_blank">foundry.jwi.ovh</a>
+      </div>
+    </div>
   </div>
-  <div class="footer">© 2025 jwi.ovh</div>
+
+  <div class="footer">
+    © 2025 jwi.ovh · <a href="https://status.jwi.ovh" target="_blank">status.jwi.ovh</a> ·
+    <a href="https://discord.gg/5GsTNTRh" target="_blank">Discord Karczmarza</a> (regi_jwi)
+  </div>
 </body>
 
 </html>
