@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>services.jwi.ovh</title>
   <style>
     body {
@@ -17,26 +17,71 @@
       padding: 20px;
       text-align: center;
     }
+
     .logo img {
       width: 80px;
       margin-bottom: 20px;
     }
+
     h1 {
       font-size: 2.5em;
       margin: 0.2em 0;
     }
+
     p {
       color: #aaa;
       max-width: 600px;
     }
-    .roadmap {
+
+    .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      margin-top: 40px;
+      margin-top: 30px;
       width: 100%;
-      max-width: 1000px;
+      max-width: 900px;
     }
+
+    .project {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: left;
+    }
+
+    .project h2 {
+      color: #0cf;
+      margin-bottom: 10px;
+    }
+
+    .project a {
+      color: #0cf;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project ul {
+      padding-left: 20px;
+    }
+
+    .roadmap {
+      margin-top: 50px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .roadmap h2 {
+      margin-bottom: 20px;
+      color: #0cf;
+    }
+
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
     .roadmap-item {
       background-color: #1a1a1a;
       border: 1px solid #333;
@@ -44,26 +89,31 @@
       padding: 15px;
       text-align: center;
     }
+
     .roadmap-item img {
       width: 100%;
       border-radius: 8px;
       margin-bottom: 10px;
     }
+
     .roadmap-item h3 {
       color: #0cf;
       margin: 10px 0 5px;
     }
+
     .footer {
       margin-top: 50px;
       font-size: 0.9em;
       color: #555;
     }
+
     .footer a {
       color: #0cf;
       text-decoration: none;
     }
   </style>
 </head>
+
 <body>
   <div class="logo">
     <img src="logo/jwi.svg" alt="Logo JWI" />
@@ -71,79 +121,81 @@
   <h1>services.jwi.ovh</h1>
   <p>Strona główna projektów i usług</p>
 
-  
-<div class="projects">
-  <div class="project">
-    <h2>Minecraft Server</h2>
-    <p>Serwer Minecraft Java Edition, wersja 1.21.8.</p>
-    <div class="details">
-      <strong>Adres:</strong> <a href="https://mc1.jwi.ovh" target="_blank">mc1.jwi.ovh</a><br>
-      <strong>Wersja:</strong> 1.21.8<br>
-      <strong>Lista modów:</strong>
-      <ul>
-        <li>(brak)</li>
-      </ul>
+  <div class="projects">
+    <div class="project">
+      <h2>Minecraft Server</h2>
+      <p>Serwer Minecraft Java Edition, wersja 1.21.8.</p>
+      <div class="details">
+        <strong>Adres:</strong> <a href="https://mc1.jwi.ovh" target="_blank">mc1.jwi.ovh</a><br>
+        <strong>Wersja:</strong> 1.21.8<br>
+        <strong>Lista modów:</strong>
+        <ul>
+          <li>(brak)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project">
+      <h2>Project Zomboid</h2>
+      <p>Serwer gry Project Zomboid (build 42).</p>
+      <div class="details">
+        <strong>Adres:</strong> <a href="https://pz1.jwi.ovh" target="_blank">pz1.jwi.ovh</a><br>
+        <strong>Build:</strong> 42
+      </div>
+    </div>
+    <div class="project">
+      <h2>FoundryVTT</h2>
+      <p>Instancja Foundry Virtual Tabletop (FoundryVTT).</p>
+      <div class="details">
+        <strong>Adres:</strong> <a href="https://foundry.jwi.ovh" target="_blank">foundry.jwi.ovh</a>
+      </div>
     </div>
   </div>
-  <div class="project">
-    <h2>Project Zomboid</h2>
-    <p>Serwer gry Project Zomboid (build 42).</p>
-    <div class="details">
-      <strong>Adres:</strong> <a href="https://pz1.jwi.ovh" target="_blank">pz1.jwi.ovh</a><br>
-      <strong>Build:</strong> 42
-    </div>
-  </div>
-  <div class="project">
-    <h2>FoundryVTT</h2>
-    <p>Instancja Foundry Virtual Tabletop (FoundryVTT).</p>
-    <div class="details">
-      <strong>Adres:</strong> <a href="https://foundry.jwi.ovh" target="_blank">foundry.jwi.ovh</a>
-    </div>
-  </div>
-</div>
-
 
   <div class="roadmap">
-    <div class="roadmap-item">
-      <img src="img/minecraft.jpg" alt="Minecraft">
-      <h3>Minecraft</h3>
-      <p>Dodanie modów</p>
-    </div>
-    <div class="roadmap-item">
-      <img src="img/projectzomboid.jpg" alt="Project Zomboid">
-      <h3>Project Zomboid</h3>
-      <p>Status: gotowe</p>
-    </div>
-    <div class="roadmap-item">
-      <img src="img/valheim.jpg" alt="Valheim">
-      <h3>Valheim</h3>
-      <p>Planowane uruchomienie serwera</p>
-    </div>
-    <div class="roadmap-item">
-      <img src="img/conanexile.jpg" alt="Conan Exile">
-      <h3>Conan Exile</h3>
-      <p>Planowane uruchomienie serwera</p>
-    </div>
-    <div class="roadmap-item">
-      <img src="img/factorio.jpg" alt="Factorio">
-      <h3>Factorio</h3>
-      <p>Planowane uruchomienie serwera</p>
-    </div>
-    <div class="roadmap-item">
-      <img src="img/enshrouded.jpg" alt="Enshrouded">
-      <h3>Enshrouded</h3>
-      <p>Planowane uruchomienie serwera</p>
-    </div>
-    <div class="roadmap-item">
-      <img src="img/lumaisland.jpg" alt="Luma Island">
-      <h3>Luma Island</h3>
-      <p>Planowane uruchomienie serwera</p>
+    <h2>Roadmap</h2>
+    <div class="roadmap-grid">
+      <div class="roadmap-item">
+        <img src="img/minecraft.png" alt="Minecraft">
+        <h3>Minecraft</h3>
+        <p>Dodanie modów</p>
+      </div>
+      <div class="roadmap-item">
+        <img src="img/projectzomboid.png" alt="Project Zomboid">
+        <h3>Project Zomboid</h3>
+        <p>Status: gotowe</p>
+      </div>
+      <div class="roadmap-item">
+        <img src="img/valheim.png" alt="Valheim">
+        <h3>Valheim</h3>
+        <p>Planowane uruchomienie serwera</p>
+      </div>
+      <div class="roadmap-item">
+        <img src="img/conanexile.png" alt="Conan Exile">
+        <h3>Conan Exile</h3>
+        <p>Planowane uruchomienie serwera</p>
+      </div>
+      <div class="roadmap-item">
+        <img src="img/factorio.png" alt="Factorio">
+        <h3>Factorio</h3>
+        <p>Planowane uruchomienie serwera</p>
+      </div>
+      <div class="roadmap-item">
+        <img src="img/enshrouded.png" alt="Enshrouded">
+        <h3>Enshrouded</h3>
+        <p>Planowane uruchomienie serwera</p>
+      </div>
+      <div class="roadmap-item">
+        <img src="img/lumaisland.png" alt="Luma Island">
+        <h3>Luma Island</h3>
+        <p>Planowane uruchomienie serwera</p>
+      </div>
     </div>
   </div>
 
   <div class="footer">
-    © 2025 jwi.ovh · <a href="https://status.jwi.ovh" target="_blank">status.jwi.ovh</a> · 
+    © 2025 jwi.ovh · <a href="https://status.jwi.ovh" target="_blank">status.jwi.ovh</a> ·
     <a href="https://discord.gg/5GsTNTRh" target="_blank">Discord Karczmarza</a> (regi_jwi)
   </div>
 </body>
+
 </html>
