@@ -42,12 +42,14 @@
       max-width: 600px;
     }
 
-    .projects {
+    .projects,
+    .roadmap {
       margin-top: 30px;
       max-width: 700px;
     }
 
-    .project {
+    .project,
+    .roadmap-item {
       margin-bottom: 25px;
       border: 1px solid #333;
       padding: 15px;
@@ -55,7 +57,8 @@
       background-color: #1a1a1a;
     }
 
-    .project h2 {
+    .project h2,
+    .roadmap-item h3 {
       margin-bottom: 10px;
       color: #0cf;
       cursor: pointer;
@@ -112,8 +115,7 @@
   <div class="projects">
     <div class="project">
       <h2>Minecraft Server</h2>
-      <p>Serwer Minecraft Java Edition, wersja 1.21.8. Stabilny, monitorowany, dostępny publicznie przez tunel ZeroTier.
-      </p>
+      <p>Serwer Minecraft Java Edition, wersja 1.21.8.</p>
       <div class="details">
         <strong>Adres:</strong> <a href="https://mc1.jwi.ovh" target="_blank">mc1.jwi.ovh</a><br>
         <strong>Wersja:</strong> 1.21.8<br>
@@ -125,7 +127,7 @@
     </div>
     <div class="project">
       <h2>Project Zomboid</h2>
-      <p>Serwer gry Project Zomboid (build 42), uruchomiony na VM z tunelem ZeroTier i reverse proxy przez VPS.</p>
+      <p>Serwer gry Project Zomboid (build 42).</p>
       <div class="details">
         <strong>Adres:</strong> <a href="https://pz1.jwi.ovh" target="_blank">pz1.jwi.ovh</a><br>
         <strong>Build:</strong> 42
@@ -133,11 +135,42 @@
     </div>
     <div class="project">
       <h2>FoundryVTT</h2>
-      <p>Instancja Foundry Virtual Tabletop (FoundryVTT) – do prowadzenia sesji RPG online, wystawiona przez reverse
-        proxy i zabezpieczona Cloudflare Access.</p>
+      <p>Instancja Foundry Virtual Tabletop (FoundryVTT).</p>
       <div class="details">
         <strong>Adres:</strong> <a href="https://foundry.jwi.ovh" target="_blank">foundry.jwi.ovh</a>
       </div>
+    </div>
+  </div>
+
+  <div class="roadmap">
+    <h2>Roadmap</h2>
+    <div class="roadmap-item">
+      <h3>Minecraft</h3>
+      <p>Basic: gotowe, TODO: Dodanie modów (ale jakich?)</p>
+    </div>
+    <div class="roadmap-item">
+      <h3>Project Zomboid</h3>
+      <p><strong>Status:</strong> gotowe</p>
+    </div>
+    <div class="roadmap-item">
+      <h3>Valheim</h3>
+      <p>Planowane uruchomienie serwera</p>
+    </div>
+    <div class="roadmap-item">
+      <h3>Conan Exile</h3>
+      <p>Planowane uruchomienie serwera</p>
+    </div>
+    <div class="roadmap-item">
+      <h3>Factorio</h3>
+      <p>Planowane uruchomienie serwera</p>
+    </div>
+    <div class="roadmap-item">
+      <h3>Enshrouded</h3>
+      <p>Planowane uruchomienie serwera</p>
+    </div>
+    <div class="roadmap-item">
+      <h3>Luma Island</h3>
+      <p>Planowane uruchomienie serwera</p>
     </div>
   </div>
 
