@@ -13,10 +13,10 @@ Statyczna strona HTML prezentująca usługi i roadmapę uruchamianych serwerów 
 Roadmapa obejmuje:
 
 - Minecraft – dodanie modów
-- Project Zomboid – gotowe
-- Valheim – planowane
+- Project Zomboid – dodanie modów
+- Valheim – dodanie modów
 - Conan Exile – planowane
-- Factorio – planowane
+- Factorio – dodanie modów
 - Enshrouded – planowane
 - Luma Island – planowane
 
@@ -24,7 +24,7 @@ Roadmapa obejmuje:
 
 - [status.jwi.ovh](https://status.jwi.ovh) – monitoring usług
 - [Discord Karczmarza](https://discord.gg/5GsTNTRh) – kontakt społecznościowy  
-  (autor Discord ID: `regi_jwi`)
+  (Discord ID: `regi_jwi`)
 
 ## 🚀 Wdrożenie
 
